@@ -39,8 +39,12 @@ public class GamePrime {
 
     public static String doCheckPrime(int number) {
 
-        for (int i = 2; i < number; i++) {
-            if (number % i == 0) {
+        if (number < 2) {
+            return "no";
+        }
+        double s = (int) Math.sqrt(number);
+        for (int j = 2; j <= s; j++) {
+            if (number % j == 0) {
                 return "no";
             }
         }
