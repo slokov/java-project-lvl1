@@ -19,7 +19,7 @@ public class Engines {
 
     public static boolean isWinner(int cnt, String username) {
         if (cnt == COUNT_ANSWER) {
-            System.out.println("Congratulations, " + username);
+            System.out.println("Congratulations, " + username + "!");
             return false;
         }
         return true;
