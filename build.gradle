@@ -16,3 +16,7 @@ version = '1.0-SNAPSHOT'
 application {
     mainClass = 'hexlet.code.App'
 }
+
+run {
+    standardInput = System.in
+}
